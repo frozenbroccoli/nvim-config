@@ -9,7 +9,7 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = false
 
-vim.opt.swapfile = false
+vim.opt.swapfile = true 
 vim.opt.backup = false
 
 vim.opt.hlsearch = false
@@ -41,3 +41,7 @@ vim.keymap.set("v", "<leader>d", "\"_d")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+vim.keymap.set("n", "<leader>o", "o<Esc>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>O", "O<Esc>", { noremap = true, silent = true })
+
