@@ -55,7 +55,7 @@ require('mason-lspconfig').setup({
         settings = {
           python = {
             analysis = {
-              typeCheckingMode = "strict",  -- Can be "basic" or "off" if needed
+              typeCheckingMode = "basic",  -- Can be "basic" or "off" if needed
               autoSearchPaths = true,
               useLibraryCodeForTypes = true
             }
